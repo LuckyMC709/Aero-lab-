@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111b">
+  <meta name="description" content="Laboratorio interactivo de aerodinámica, envolvente de vuelo y análisis de casos aeronáuticos.">
+  <title>Aero Lab — Ingeniería de vuelo, a la vista</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./src/app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#inicio" aria-label="Aero Lab, inicio"><span class="brand-mark">A<span>✳</span></span><span class="brand-name">AERO<span>LAB</span></span></a>
+      <div class="side-label">ESPACIO DE TRABAJO</div>
+      <nav class="side-nav" aria-label="Navegación principal">
+        <a href="#inicio" data-route="inicio"><span class="nav-icon">⌂</span> Inicio</a>
+        <a href="#aeronaves" data-route="aeronaves"><span class="nav-icon">◈</span> Aeronaves <span class="nav-count">01</span></a>
+        <div class="side-label modules-label">SIMULADORES</div>
+        <a href="#carga" data-route="carga"><span class="nav-icon">↟</span> Carga alar</a>
+        <a href="#envolvente" data-route="envolvente"><span class="nav-icon">⌁</span> Coffin corner</a>
+        <a href="#engelamiento" data-route="engelamiento"><span class="nav-icon">❋</span> Engelamiento</a>
+        <a href="#factor" data-route="factor"><span class="nav-icon">↗</span> Factor de carga</a>
+        <div class="side-label modules-label">INVESTIGACIÓN</div>
+        <a href="#caso" data-route="caso"><span class="nav-icon">◎</span> Caso Palm Beach <span class="live-dot"></span></a>
+        <a href="#comparar" data-route="comparar"><span class="nav-icon">⇄</span> Comparar escenarios</a>
+      </nav>
+      <div class="sidebar-bottom"><div class="source-status"><span class="source-light"></span><div><b>Modelo educativo</b><small>Parámetros trazables</small></div></div><div class="side-version">AERO LAB <span>v0.2 · PREVIEW</span></div></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button class="mobile-menu" id="mobileMenu" aria-label="Abrir navegación">☰</button><div class="breadcrumb"><span>LABORATORIO</span><span class="crumb-slash">/</span><b id="pageCrumb">Inicio</b></div><div class="top-actions"><span class="status-chip"><i></i> SISTEMA LISTO</span><span class="avatar">AL</span></div></header>
+      <div id="view" class="view"></div>
+      <footer class="app-footer"><span>© 2026 AERO LAB <span class="footer-sep">·</span> LABORATORIO AERODINÁMICO</span><span><a href="#fuentes">FUENTES Y MÉTODO</a><span class="footer-sep">·</span> NO ES UNA HERRAMIENTA OPERACIONAL</span></footer>
+    </main>
+  </div>
+</body>
+</html>
