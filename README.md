@@ -10,7 +10,7 @@ Serví esta carpeta con cualquier servidor estático (por ejemplo, `python -m ht
 
 1. Creá el repositorio público `aero-lab`.
 2. Subí el contenido de esta carpeta a la rama `main`.
-3. En **Settings → Pages → Build and deployment**, seleccioná **GitHub Actions**.
+3. En **Settings → Pages → Build and deployment**, seleccioná **GitHub Actions** como fuente de publicación.
 4. El workflow `.github/workflows/pages.yml` publica el sitio al hacer push a `main`.
 5. La dirección del proyecto es `https://luckymc709.github.io/Aero-lab-/`; comprobá el valor final en **Settings → Pages**.
 
